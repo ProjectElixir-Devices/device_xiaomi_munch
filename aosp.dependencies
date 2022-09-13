@@ -2,5 +2,11 @@
   {
     "repository": "android_device_xiaomi_sm8250-common",
     "target_path": "device/xiaomi/sm8250-common"
+  },
+{
+    "repository": "vendor_xiaomi_haydn-extras",
+    "target_path": "vendor/xiaomi/haydn-extras",
+    "remote": "Ar5646L",
+    "branch": "twelve"
   }
 ]
