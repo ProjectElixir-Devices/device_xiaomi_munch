@@ -8,5 +8,11 @@
     "target_path": "vendor/xiaomi/haydn-extras",
     "remote": "Ar5646L",
     "branch": "twelve"
+},
+  {
+   "repository"  : "vendor_xiaomi_munch-firmware",
+   "target_path" : "vendor/xiaomi/munch-firmware",
+   "remote"      : "Ar5646L"",
+   "branch"      : "twelve"
   }
 ]
