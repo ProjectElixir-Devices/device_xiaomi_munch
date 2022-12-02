@@ -11,7 +11,7 @@ git clone --depth=1 https://github.com/ProjectElixir-Devices/device_xiaomi_sm825
 
 echo 'Cloning Kernel tree [2/8]'
 # Kernel Tree
-git clone --depth=1 https://github.com/Rohail33/Realking_xiaomi_sm8250.git -b munch kernel/xiaomi/sm8250
+git clone --depth=1 https://github.com/madmax7896/kernel_xiaomi_sm8250.git -b arrow-13.0 kernel/xiaomi/sm8250
 
 echo 'Cloning Vendor tree [3/8]'
 # Vendor Tree
@@ -29,7 +29,7 @@ echo 'Cloning GcamGo [6/8]'
 # GcamGo
 git clone --depth=1 https://gitlab.com/Ar5646L/vendor_xiaomi_haydn-extras.git -b twelve vendor/xiaomi/haydn-extras
 
-echo 'Cloning Mi Cam [7/8]
+echo 'Cloning Mi Cam [7/8]'
 # Mi Cam
 git clone --depth=1 https://gitlab.com/spkal01/android_vendor_xiaomi_munch-miuicamera.git -b pyro vendor/xiaomi/munch-miuicamera
 
