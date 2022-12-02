@@ -8,7 +8,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from alioth device
+# Inherit from munch device
 $(call inherit-product, device/xiaomi/munch/device.mk)
 
 # Inherit some common Project-Elixir stuff.
