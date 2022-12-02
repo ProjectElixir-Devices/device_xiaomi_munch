@@ -11,17 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/munch/device.mk)
 
-# Inherit some common Project Elixir stuff.
+# Inherit some common Project-Elixir stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_AOSP_RECOVERY := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-
+IS_PHONE := true
 ELIXIR_MAINTAINER := AR
 ELIXIR_BUILD_TYPE := OFFICIAL
+EXTRA_UDFPS_ANIMATIONS := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+FORCE_AOSP_DIALER := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_munch
