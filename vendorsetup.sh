@@ -33,6 +33,6 @@ echo 'Cloning Device Settings [7/8]'
 # Device Settings
 git clone --depth=1 https://github.com/Evolution-X/packages_resources_devicesettings.git -b tiramisu packages/resources/devicesettings
 
-echo 'Cloning Clang 16.0.2 [8/8]'
-# Clang 16.0.2 
-git clone --depth=1 https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r475365b.git -b 13 prebuilts/clang/host/linux-x86/clang-r475365b
+echo 'Cloning Prelude Clang [8/8]'
+# Prelude Clang
+git clone --depth=1 https://gitlab.com/jjpprrrr/prelude-clang.git prebuilts/clang/host/linux-x86/clang-prelude
