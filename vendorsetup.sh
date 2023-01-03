@@ -5,30 +5,34 @@ rm -rf kernel/xiaomi/sm8250-common
 rm -rf vendor/xiaomi
 rm -rf packages/resources/devicesettings
 
-echo 'Cloning DT-Common tree [1/7]'
+echo 'Cloning DT-Common tree [1/8]'
 # Device Tree Common
 git clone --depth=1 https://github.com/ProjectElixir-Devices/device_xiaomi_sm8250-common.git -b thirteen device/xiaomi/sm8250-common
 
-echo 'Cloning Kernel tree [2/7]'
+echo 'Cloning Kernel tree [2/8]'
 # Kernel Tree
 git clone --depth=1 https://github.com/madmax7896/kernel_xiaomi_sm8250.git -b arrow-13.0 kernel/xiaomi/sm8250
 
-echo 'Cloning Vendor tree [3/7]'
+echo 'Cloning Vendor tree [3/8]'
 # Vendor Tree
 git clone --depth=1 https://gitlab.com/Ar5646L/vendor_xiaomi_munch.git -b 13 vendor/xiaomi/munch
 
-echo 'Cloning Vendor-Common tree [4/7]'
+echo 'Cloning Vendor-Common tree [4/8]'
 # Vendor-Common Tree
 git clone --depth=1 https://github.com/Ar5646L/vendor_xiaomi_sm8250-common.git -b master vendor/xiaomi/sm8250-common
 
-echo 'Cloning Firmware [5/7]'
+echo 'Cloning Firmware [5/8]'
 # Firmware
 git clone --depth=1 https://gitlab.com/Ar5646L/vendor_xiaomi_munch-firmware.git -b twelve vendor/xiaomi/munch-firmware
 
-echo 'Cloning GcamGo [6/7]'
+echo 'Cloning GcamGo [6/8]'
 # GcamGo
 git clone --depth=1 https://gitlab.com/Ar5646L/vendor_xiaomi_haydn-extras.git -b twelve vendor/xiaomi/haydn-extras
 
-echo 'Cloning Device Settings [7/7]'
+echo 'Cloning Device Settings [7/8]'
 # Device Settings
 git clone --depth=1 https://github.com/Evolution-X/packages_resources_devicesettings.git -b tiramisu packages/resources/devicesettings
+
+echo 'Cloning Clang 16.0.2 [8/8]'
+# Clang 16.0.2 
+git clone --depth=1 https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r475365b.git -b 13 prebuilts/clang/host/linux-x86/clang-r475365b
